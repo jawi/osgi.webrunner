@@ -1,0 +1,5 @@
+-buildpath: osgi.core,\
+	org.apache.felix.http.jetty
+Private-Package: osgi.webrunner.addon2
+Bundle-Activator: osgi.webrunner.addon2.Activator
+Bundle-Version: 1.0.0

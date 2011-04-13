@@ -1,0 +1,6 @@
+Bundle-Version: 1.0.0
+-buildpath: osgi.core,\
+	osgi.cmpn,\
+	org.apache.felix.http.jetty
+Bundle-Activator: osgi.webrunner.addon1.Activator
+Private-Package: osgi.webrunner.addon1
