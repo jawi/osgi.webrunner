@@ -1,4 +1,4 @@
-package osgi.webrunner.addon1;
+package osgi.webrunner.addon.control;
 
 
 import java.util.*;
@@ -11,14 +11,14 @@ import org.osgi.framework.*;
 public class Activator implements BundleActivator
 {
   // VARIABLES
-  
+
   private ServiceRegistration serviceReg;
 
   // METHODS
-  
+
   public void start( BundleContext context ) throws Exception
   {
-    MyWebComponent1 webComp = new MyWebComponent1();
+    ControlComponent webComp = new ControlComponent( context );
 
     Properties props = new Properties();
     // the webroot alias of the webcomponent itself, so we can query on
@@ -35,3 +35,5 @@ public class Activator implements BundleActivator
       this.serviceReg.unregister();
   }
 }
+
+/* EOF */

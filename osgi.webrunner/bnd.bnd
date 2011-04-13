@@ -2,11 +2,11 @@ Private-Package: osgi.webrunner.main
 -runbundles: osgi.cmpn,\
 	org.apache.felix.shell,\
 	org.apache.felix.shell.tui,\
-	org.apache.felix.http.jetty;version=2.0.4,\
+	org.apache.felix.http.jetty,\
 	org.apache.felix.http.whiteboard,\
-	osgi.webrunner.api;version=latest,\
 	osgi.webrunner.addon1;version=latest,\
-	osgi.webrunner.addon2;version=latest
+	osgi.webrunner.addon2;version=latest,\
+	osgi.webrunner.addon.control;version=latest
 -runfw: org.apache.felix.framework
 -buildpath: osgi.core,\
 	osgi.cmpn,\
